@@ -19,4 +19,16 @@ public class CardapioBO {
 		rd = new CardapioDao();
 			return rd.select(codigo);
 	} 
+	
+	
+	public boolean cadastrar(CardapioTO rto) {
+		rd = new CardapioDao();
+		return rd.insert(rto);
+	}
+	
+	public void atualiza(CardapioTO rto) {
+		rd = new CardapioDao();
+		rd.update(rto);
+//		new CardapioDao().update(rto);
+	}
 }
