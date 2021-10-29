@@ -3,6 +3,7 @@ package br.com.cardapio.resource;
 import java.util.List;
 
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -53,5 +54,11 @@ public class CardapioResource {
 		receita.setCodigo(codigo);
 		rb.atualiza(receita);
 		return Response.ok().build();
+	}
+	
+	@DELETE
+	@Path("/{codigo}")
+	public void excluir(@PathParam("codigo") int codigo) {
+		rb.apagar(codigo);
 	}
 }
