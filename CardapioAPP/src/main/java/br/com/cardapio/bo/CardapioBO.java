@@ -31,4 +31,11 @@ public class CardapioBO {
 		rd.update(rto);
 //		new CardapioDao().update(rto);
 	}
+	
+	public void apagar(int codigo) {
+		rd = new CardapioDao();
+		rd.delete(codigo);
+//		new CardapioDao().delete(codigo);
+
+	}
 }

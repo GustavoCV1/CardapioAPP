@@ -63,5 +63,9 @@ public class CardapioDao {
 			}
 		}
 	}
+	
+	public void delete(int codigo) {
+		receita.remove(select(codigo));
+	}
 
 }
