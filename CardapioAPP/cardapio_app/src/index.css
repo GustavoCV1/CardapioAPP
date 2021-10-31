@@ -18,6 +18,10 @@
   margin-left: 32px;
 }
 
+#Menu_List img{
+  height: 22px;
+}
+
 #Menu_List {
   list-style: none;
   display: flex;
