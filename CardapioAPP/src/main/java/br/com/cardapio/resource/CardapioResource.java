@@ -60,5 +60,5 @@ public class CardapioResource {
 	@Path("/{codigo}")
 	public void excluir(@PathParam("codigo") int codigo) {
 		rb.apagar(codigo);
-	}
+	}	 
 }
